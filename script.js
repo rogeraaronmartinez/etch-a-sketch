@@ -21,10 +21,17 @@ function makeGrid(input) {
     }
 }
 
-
+function clearGrid() {
+    let clearColor = document.querySelectorAll(".grid-item");
+    for (const color of clearColor) {
+        color.style.backgroundColor = "lightgrey";
+    }
+        
+}
 
 
 function gridSize() {
+    gridContainer.innerHTML = '';
     let grid = prompt("Enter grid size up to 100");
     if(grid < 100) {
         let num = 22*grid;
