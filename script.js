@@ -24,7 +24,7 @@ function makeGrid(input) {
 function clearGrid() {
     let clearColor = document.querySelectorAll(".grid-item");
     for (const color of clearColor) {
-        color.style.backgroundColor = "lightgrey";
+        color.style.backgroundColor = "black";
     }
         
 }
@@ -33,7 +33,7 @@ function clearGrid() {
 function gridSize() {
     gridContainer.innerHTML = '';
     let grid = prompt("Enter grid size up to 100");
-    if(grid < 100) {
+    if(grid <= 100) {
         let num = 22*grid;
         gridContainer.style.height = num + "px";
         gridContainer.style.width = num + "px";
