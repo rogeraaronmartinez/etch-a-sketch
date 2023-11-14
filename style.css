@@ -1,17 +1,24 @@
-.grid-container {
+#gridContainer {
     display: flex;
-    
     flex-wrap: wrap;
-    width: 320px;
     border: 0;
     margin: 0;
     padding: 0;
 }
 
 .grid-item {
-    flex: 1 0 calc(25% - 8px);
-    height: 0;
-    padding-bottom: calc(25% - 8px);
+    width: 20px;
+    height: 20px;
     background-color: lightgray;
-    margin: 1px;
+    margin: 0;
+    padding: 0;
+    border-width: thin;
+    border-style: solid;
+    
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    
 }
